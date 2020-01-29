@@ -36,22 +36,22 @@ function draw() {
 
   noStroke();
   fill('black');
-  quad(370, 95, 392, 95, 392, 110, 370, 110)
+  quad(370, 95, 392, 95, 392, 110, 370, 110);
 
   fill('black');
-  quad(345, 155, 360, 165, 360, 175, 345, 170)
+  quad(345, 155, 360, 165, 360, 175, 345, 170);
 
   fill('black');
-  quad(415, 155, 390, 165, 390, 175, 415, 170)
+  quad(415, 155, 390, 165, 390, 175, 415, 170);
 
   fill('black');
-  quad(340, 165, 340, 140, 350, 130, 350, 170)
+  quad(340, 165, 340, 140, 350, 130, 350, 170);
 
   fill('black');
-  quad(420, 165, 420, 140, 410, 130, 410, 170)
+  quad(420, 165, 420, 140, 410, 130, 410, 170);
 
   fill('black');
-  quad(350, 125, 350, 170, 380, 185, 380, 125)
+  quad(350, 125, 350, 170, 380, 185, 380, 125);
 
   fill('black');
   quad(410, 125, 410, 170, 380, 185, 380, 125)
@@ -273,6 +273,7 @@ function draw() {
 
 
 pop();
+
   if (mouseIsPressed) {
     // this is the pressed state/
     push();
@@ -286,7 +287,7 @@ pop();
     // non-presse state
 
   }
-BackpackBulge();
+// BackpackBulge();
 }
 
 function mousePressed() {
@@ -350,5 +351,5 @@ function RedCross(){
     fill('grey');
     rotate(radians(-95));
     arc(-325, 232, 120, 80, 3, 4.50);
-
+    pop();
   }
