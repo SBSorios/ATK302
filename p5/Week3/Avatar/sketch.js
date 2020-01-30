@@ -1,27 +1,20 @@
-let PowerSwordGradient;
-let backgroundpart1;
 var i = 0;
+var backgroundpart1;
+var PowerSwordGradient;
+var backgroundpart2;
 
 function preload() {
-  PowerSwordGradient = loadImage('PowerSwordGradient.svg');
-  backgroundpart1 = loadImage('ExterminatusPart1.jpg');
+
+  //backgroundpart1 = loadImage('ExterminatusPart1.jpg');
 
 }
 
 function setup() {
   //// Sets the screen to be 720 pixels wide and 400 pixels high
   createCanvas(1000, 500);
-
+  PowerSwordGradient = loadImage('PowerSwordGradient.svg');
   backgroundpart1 = loadImage('ExterminatusPart1.jpg');
   backgroundpart2 = loadImage('ExterminatusPart2.jpg');
-
-        //let myArray = ['BackpackHalfBulb','BackpackHalfSlit', 'BackPackBulge']
-        //print(myArray); // ['BackpackHalfBulb','BackpackHalfSlit','BackPackBulge']
-
-        //array.reverse(myArray);
-        //print(myArray);//
-  //}
-
 
 }
 
@@ -34,24 +27,32 @@ function draw() {
     image(backgroundpart1, 0, 0, width, height);
   }
 
+  push();
+  translate(664,-103);
+  rotate(radians(95));
+  //scale(1.5);
+
+  BackPackBulge();
+  pop();
+
   noStroke();
   fill('black');
-  quad(370, 95, 392, 95, 392, 110, 370, 110);
+  quad(370, 95, 392, 95, 392, 110, 370, 110)
 
   fill('black');
-  quad(345, 155, 360, 165, 360, 175, 345, 170);
+  quad(345, 155, 360, 165, 360, 175, 345, 170)
 
   fill('black');
-  quad(415, 155, 390, 165, 390, 175, 415, 170);
+  quad(415, 155, 390, 165, 390, 175, 415, 170)
 
   fill('black');
-  quad(340, 165, 340, 140, 350, 130, 350, 170);
+  quad(340, 165, 340, 140, 350, 130, 350, 170)
 
   fill('black');
-  quad(420, 165, 420, 140, 410, 130, 410, 170);
+  quad(420, 165, 420, 140, 410, 130, 410, 170)
 
   fill('black');
-  quad(350, 125, 350, 170, 380, 185, 380, 125);
+  quad(350, 125, 350, 170, 380, 185, 380, 125)
 
   fill('black');
   quad(410, 125, 410, 170, 380, 185, 380, 125)
@@ -268,9 +269,9 @@ function draw() {
   triangle(98, 110, 81.5, 122, 70, 88)
   RedCross();
   push();
-
+  translate(665,-103);
+  rotate(radians(-265))
       RedCross();
-
 
 pop();
 
@@ -283,11 +284,12 @@ pop();
     PowerSwordGradient.resize(220, 150);
     image(PowerSwordGradient, 95, -75);
     pop();
+
   } else {
     // non-presse state
 
   }
-// BackpackBulge();
+
 }
 
 function mousePressed() {
@@ -297,7 +299,7 @@ function mousePressed() {
 
 function RedCross(){
     push();
-//Come back to reverse mirror
+
     //translate(200, 0);
 
     fill(153, 0, 0);
@@ -321,12 +323,6 @@ function RedCross(){
     fill(153, 0, 0);
     triangle(275, 155, 293, 140, 283, 146)
 
-    // fill(153, 0, 0);
-    // triangle(275, 155, 270, 170, )
-    //
-    // fill(153, 0, 0);
-    // triangle(275, 155, 270, 170, )
-
     fill(153, 0, 0);
     triangle(258, 181, 275, 170, 275, 155)
 
@@ -334,16 +330,33 @@ function RedCross(){
     triangle(258, 181, 265, 166, 275, 155)
     pop();
   }
-  function BackpackBulge(){
+  function BackPackBulge(){
     fill('grey');
     quad(-330,191,-320,238,-315,233,-315,180)
     quad(-315,180,-315,233,-285,233,-285,180)
     rect(-310,175,10,10)
+
+    quad(-250,180,-255,233,-250,240,-240,191)
+    quad(-250,180,-250,233,-315,233,-315,180)
+    rect(-268,175,10,10)
+
+    push();
+    fill('black');
+    quad(-331,205,-322,245,-319.8,240,-327,204.5)
+    quad(-245,205,-250,240,-246,242,-241,205.2)
+    pop();
+
+    push();
+    fill('grey');
+    rotate(radians(-95));
+    arc(-325, 232, 120, 80, 3, 4.50);
+    pop();
   }
   function BackpackHalfSlit(){
     push();
     fill('black');
     quad(-331,205,-322,245,-319.8,240,-327,204.5)
+    quad(-245,205,-250,240,-246,242,-241,205.2)
     pop();
   }
   function BackpackHalfBulb(){
