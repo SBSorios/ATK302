@@ -28,15 +28,36 @@ function draw() {
     image(backgroundpart1, 0, 0, width, height);
   }
 
-  push();
-  translate(664,-103);
-  rotate(radians(95));
-  //scale(1.5);
+  //push();
+//  translate(664,-103);
+//  rotate(radians(95));
+//  scale(1.5);
 
-  //BackPackBulge();
-  pop();
+//  BackPackBulge();
+//  pop();
 
   noStroke();
+  fill('grey');
+  arc(340, 140, 100, 80, 3, 4.5);
+  fill('black');
+  quad(334,114,340,140,344.1,136,339,113)
+  fill('grey');
+  quad(344,136,336,100,350,87.5,350,130)
+  fill('grey');
+  rect(355,81,10,8)
+
+  fill('grey');
+  arc(420, 140, 100, 80, radians(279),radians(50));
+  fill('black');
+  quad(424, 114, 420, 140, 416, 136, 419.5, 113.3);
+  fill('grey');
+  quad(422,100,416,136,410,130,410,88);
+  fill('grey');
+  rect(395,81,10,8)
+
+  fill('grey');
+  quad(350,87.5,350,128,410,130,410,87.5)
+
   fill('black');
   quad(370, 95, 392, 95, 392, 110, 370, 110)
 
