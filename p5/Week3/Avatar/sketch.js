@@ -86,10 +86,11 @@ function draw() {
   ellipse(405, 160, 10, 10)
 
   fill('red');
-  triangle(365, 120, 380, 132, 365, 130);
 
+  arc(370,125,20,10,radians(20),radians(200))
   fill('red');
-  triangle(400, 120, 385, 132, 400, 130);
+  arc(392.5,125,20,10,radians(340),radians(160))
+
 
   fill('white');
   rect(340, 185, 80, 100)
