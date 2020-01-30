@@ -13,8 +13,8 @@ function setup() {
   //// Sets the screen to be 720 pixels wide and 400 pixels high
   createCanvas(1000, 500);
   PowerSwordGradient = loadImage('PowerSwordGradient.svg');
-  backgroundpart1 = loadImage('ExterminatusPart1.jpg');
-  backgroundpart2 = loadImage('ExterminatusPart2.jpg');
+  backgroundpart1 = loadImage('ExterminatusPart1.JPG');
+  backgroundpart2 = loadImage('ExterminatusPart2.JPG');
 
 }
 
