@@ -11,6 +11,7 @@ function preload() {
 
 function setup() {
   //// Sets the screen to be 720 pixels wide and 400 pixels high
+background('red');
   createCanvas(1000, 500);
   PowerSwordGradient = loadImage('PowerSwordGradient.svg');
   backgroundpart1 = loadImage('ExterminatusPart1.JPG');
