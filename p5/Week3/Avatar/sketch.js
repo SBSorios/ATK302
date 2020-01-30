@@ -28,14 +28,6 @@ function draw() {
     image(backgroundpart1, 0, 0, width, height);
   }
 
-  //push();
-//  translate(664,-103);
-//  rotate(radians(95));
-//  scale(1.5);
-
-//  BackPackBulge();
-//  pop();
-
   noStroke();
   fill('grey');
   arc(340, 140, 100, 80, 3, 4.5);
