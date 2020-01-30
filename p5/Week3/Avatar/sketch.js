@@ -113,7 +113,7 @@ function draw() {
 
   fill(0);
   textSize(40);
-  text(mouseX.toFixed(0) + "," + mouseY, 40, 40);
+//  text(mouseX.toFixed(0) + "," + mouseY, 40, 40);
 
   fill('black');
   arc(380, 285, 80, 75, TWO_PI, PI);
