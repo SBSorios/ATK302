@@ -2,6 +2,7 @@ var i = 0;
 var backgroundpart1;
 var PowerSwordGradient;
 var backgroundpart2;
+var SPESS;
 
 function preload() {
 
@@ -11,6 +12,7 @@ function preload() {
 
 function setup() {
   //// Sets the screen to be 720 pixels wide and 400 pixels high
+  SPESS = loadSound('assets/SPESSMEHREENS.mp4');
 background('red');
   createCanvas(1000, 500);
   PowerSwordGradient = loadImage('PowerSwordGradient.svg');
