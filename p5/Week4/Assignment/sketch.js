@@ -65,11 +65,11 @@ function draw() {
   // put drawing code here
   background(100);
   fill('red'); // SETS the color
-  textFont(Box, 120); // SETS the font
+  textFont(Box, 50); // SETS the font
   //  textSize(36);	// SETS the size of the font
-  text('Batul Bruvas', 10, 150); // DISPLAYS TEXT WITH THE FONT
+  text('Tehre is noh time to beh lohst! Batul Brothas!', 10, 150); // DISPLAYS TEXT WITH THE FONT
   textSize(30);
-  text('Direct your attention to Force Commander Boreale of the BLUD REHVENS', 10, 250);
+  text('Direct your attention to Force Commander Boreale of the BLUD REHVENS ', 10, 250);
   //tint(255, 0, 0);
   image(Spess, 275, 300,200,300);
   image(Boreale, 0, 300,200,300);
