@@ -45,6 +45,7 @@ var SPESS;
 var Spess;
 var Boreale;
 var Diomedes;
+var Balls;
 
 function preload() {
   SPESS = loadSound('assets/SPESSMEHREENS.mp4');
@@ -57,6 +58,7 @@ function setup() {
   Spess = loadImage('assets/SPEHSS-MAHREENS.JPG');
   Boreale = loadImage ('assets/Boreale.jpg');
   Diomedes = loadImage ('assets/Diomedes.jpg');
+  Balls = loadImage ('assets/Balls-of-Steel.jpg');
   SPESS.play();
   Box = loadFont('assets/ABoxFor3.ttf');
 }
@@ -74,6 +76,7 @@ function draw() {
   image(Spess, 275, 300,200,300);
   image(Boreale, 0, 300,200,300);
   image(Diomedes, 550, 300,200,300);
+  image(Balls, 550, 300,200,300);
 }
 
   function mouseReleased() {
