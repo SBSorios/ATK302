@@ -54,9 +54,12 @@ gif_loadImg = loadImage("assets/VampireFlying.gif");
 
 }
 
-
+let ele;
 function setup() {
   // put setup code here
+  ele = createAudio('assets/EvilLaugh.mp3');
+  ele.autoplay(true);
+
   createCanvas(800, 800);
   background('black');
   Hound = loadImage('assets/Hound.png');
@@ -149,20 +152,26 @@ function draw() {
   switch (myState) {
     case 0:
       background('black');
-        fill('white');
-        textSize(25);
-      text("Let's start this presentation with a quiz!", 150, 100);
-
+      push();
+        fill('red');
+          textFont(STRANGERCREATURE, 50);
+        textSize(30);
+      text("Let's start this presentation with a quiz", 80, 100);
+pop();
       break;
 
     case 1:
       background('black');
-      text("Which one of these is not like the other?", 150, 100);
+      push();
+      fill('red')
+      textFont(STRANGERCREATURE, 50);
+    textSize(30);
+      text("Which one of these is not like the other", 80, 100);
+      pop();
       image(Hound, 100, 400,200,200);
       image(Lich, 100, 150,200,200);
       image(Revenant, 400, 150,200,200);
       image(Crossbowman, 400, 400,200,200);
-
       TimerText();
     //  push();
     //  translate(665,-103);
@@ -175,15 +184,22 @@ function draw() {
         myState = 2 ;
         timer = 0;
       }
+
       break;
 
     case 2:
     background('black');
-    text("That's right! It's", 200, 100);
+    push();
+    fill('red');
+    textFont(STRANGERCREATURE, 50);
+  textSize(30);
+    text("It's", 300, 100);
+
+  pop();
     push();
     fill('green');
     textSize(25);
-    text("Crossbowman!", 375, 100);
+    text("Crossbowman", 375, 100);
 pop();
 
     push();
@@ -334,9 +350,9 @@ pop();
                                           if (timer > 120) {
                                             myState = 10;
                                             timer = 0;
+}
 
 
-                                          }
                                           break;
                                           case 10:
                                           background('black');
@@ -384,7 +400,7 @@ function TimerText(){
     rect(x, 700, 540, 50);
     fill('red');
     textSize(25);
-    text("Hurry before I reach the other side of the screen!", x, 730);
+    text("Hurry before I reach the other side of the screen", x, 730);
 
     x = x + 0.520;
     if (x > width) {
@@ -393,3 +409,7 @@ function TimerText(){
 
     pop();
   }
+
+//  function touchStarted() {
+  //  getAudioContext().resume();
+  //}
