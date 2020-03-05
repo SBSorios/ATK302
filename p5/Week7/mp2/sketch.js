@@ -5,9 +5,9 @@ var Lich;
 var Revenant;
 var Crossbowman;
 var MonsterFace;
-//var Dracula;
-//var EvilLaugh;
-//var MonsterGrowl;
+var Dracula;
+var EvilLaugh;
+var MonsterGrowl;
 var x = 0;
 var gif_loadImg, gif_createImg;
 var gif_loadImg2, gif_createImg2;
@@ -48,9 +48,9 @@ gif_loadImg = loadImage("assets/VampireFlying.gif");
   gif_loadImg10 = loadImage("assets/FastSoul.gif");
   gif_createImg10 = createImg("assets/FastSoul.gif");
 
-//  Dracula = loadSound('assets/Dracula.mp4');
-//  EvilLaugh = loadSound('assets/EvilLaugh.mp4');
-//  MonsterGrowl = loadSound('assets/MonsterGrowl.mp4');
+  Dracula = loadSound('assets/Dracula.mp3');
+  EvilLaugh = loadSound('assets/EvilLaugh.mp3');
+  MonsterGrowl = loadSound('assets/MonsterGrowl.mp3');
 
 }
 
@@ -275,6 +275,7 @@ pop();
       image(Hound, 550, 400,200,300);
 
 
+
       break;
 
       case 6:
@@ -286,6 +287,7 @@ pop();
       text("It is off to oblivion with you lot", 50,100);
       textFont(STRANGERCREATURE, 50);
       gif_createImg.position(250, 140);
+
 
       break;
 
@@ -327,6 +329,28 @@ pop();
                                     gif_createImg9.position(250, 500);
                                           gif_createImg10.position(500, 500);
 
+                                          MonsterGrowl.play();
+                                          timer++ ;
+                                          if (timer > 120) {
+                                            myState = 10;
+                                            timer = 0;
+
+
+                                          }
+                                          break;
+                                          case 10:
+                                          background('black');
+                                          fill('red');
+                                          text("The takeaway is don't be a sore loser", 15,100);
+                                          textFont(STRANGERCREATURE, 50);
+                                          gif_createImg2.position(250, 110);
+                                                gif_createImg3.position(500, 200);
+                                                      gif_createImg4.position(0, 200);
+                                          gif_createImg8.position(0, 500);
+                                                gif_createImg9.position(250, 500);
+                                                      gif_createImg10.position(500, 500);
+                                          MonsterGrowl.stop();
+
 
 
     //  image(gif_loadImg, 50, 50);
@@ -343,12 +367,6 @@ pop();
        // the canvas.
 
 
-      break;
-
-      case 7:
-      image(Revenant, 275, 400,200,300);
-      image(Lich, 0, 400,200,300);
-      image(Hound, 550, 400,200,300);
 
   }
 
