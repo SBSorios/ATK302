@@ -84,6 +84,8 @@ function draw() {
       text("Teh Emprah Protects!", 600, 50);
     fill(0, 0, 153);
       text("Left Mouse Click to Start Over", 150, 50);
+      fill(0, 0, 153);
+        text("Scroll Up To See Message", 300, 650);
 
       break;
 
