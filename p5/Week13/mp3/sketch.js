@@ -60,9 +60,9 @@ function draw() {
       image(BorealeIntro, 400, 400, 800, 800);
       fill('white');
       textFont(Blackletter, 22);
-      text("Commander Boreale, todeh the enemeh is at oua doar! Kill them in teh nehme of teh Emprah!", 400, 80);
-      fill('Blue');
-      text("Left Mouse Click to Start, Use Arrow Keys to Move", 400, 700);
+      text("Commander Boreale, todeh the enemeh is at oua doar! Kill them in teh nehme of teh Emprah!", 400, 50);
+      fill(0, 0, 153);
+      text("Left Mouse Click to Start & Use Arrow Keys to Move", 400, 25);
       break;
 
     case 1: //game state
@@ -81,15 +81,18 @@ function draw() {
       //background('yellow');
       image(Victory, 400, 400, 800, 800);
       fill('white');
-      text("Teh Emprah Protects!", 400, 400);
+      text("Teh Emprah Protects!", 600, 50);
+    fill(0, 0, 153);
+      text("Left Mouse Click to Start Over", 150, 50);
 
       break;
 
     case 3: //lose
       image(Defeat, 400, 400, 800, 800);
       fill('red');
-      text("You have fehld teh Emprah...", 400, 100);
-
+      text("You have fehld teh Emprah...", 600, 100);
+      fill(0, 0, 153);
+      text("Left Mouse Click to Start Over", 150, 100);
       break;
   }
 }
