@@ -35,12 +35,12 @@ function setup() {
   Khornate = loadImage('Assets/Khornate.JPG');
   Victory = loadImage('Assets/Victory.JPG');
   Defeat = loadImage('Assets/Defeat.JPG');
-  BorealeIntroduction = loadImage('Assets/BorealeIntroduction.jpg');
+  BorealeIntroduction = loadImage('Assets/BorealeIntroduction.JPG');
   Office = loadImage('Assets/Office.JPG');
   Blackletter = loadFont('Assets/Blackletter.TTF');
   BlackletterOutline = loadFont('Assets/BlackletterOutline.TTF');
   Ancient = loadFont('Assets/Ancient.TTF');
-  Bold = loadFont('Assets/theboldfont.TTF');
+  Bold = loadFont('Assets/theboldfont.ttf');
   imageMode(CENTER);
 
   //SPESS.play();
