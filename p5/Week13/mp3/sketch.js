@@ -14,9 +14,9 @@ var Defeat;
 var Stronghold;
 var BorealeIntroduction;
 var Office;
-var Blackletter;
-var BlackletterOutline;
-var Ancient;
+//var Blackletter;
+//var BlackletterOutline;
+//var Ancient;
 var Bold;
 
 function preload() {
@@ -35,12 +35,12 @@ function setup() {
   Khornate = loadImage('Assets/Khornate.JPG');
   Victory = loadImage('Assets/Victory.JPG');
   Defeat = loadImage('Assets/Defeat.JPG');
-  BorealeIntroduction = loadImage('Assets/BorealeIntroduction.JPG');
+  BorealeIntroduction = loadImage('Assets/BorealeIntroduction.jpg');
   Office = loadImage('Assets/Office.JPG');
-  Blackletter = loadFont('Assets/Blackletter.TTF');
-  BlackletterOutline = loadFont('Assets/BlackletterOutline.TTF');
-  Ancient = loadFont('Assets/Ancient.TTF');
-  Bold = loadFont('Assets/theboldfont.ttf');
+  //Blackletter = loadFont('Assets/Blackletter.TTF');
+//  BlackletterOutline = loadFont('Assets/BlackletterOutline.TTF');
+  //Ancient = loadFont('Assets/Ancient.TTF');
+  Bold = loadFont('Assets/theboldfont.TTF');
   imageMode(CENTER);
 
   //SPESS.play();
