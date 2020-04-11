@@ -12,9 +12,12 @@ var Failure;
 var Victory;
 var Defeat;
 var Stronghold;
-var BorealeIntro;
+var BorealeIntroduction;
 var Office;
 var Blackletter;
+var BlackletterOutline;
+var Ancient;
+var Bold;
 
 function preload() {
   Stronghold = loadSound('Assets/Stronghold.mp3');
@@ -32,9 +35,12 @@ function setup() {
   Khornate = loadImage('Assets/Khornate.JPG');
   Victory = loadImage('Assets/Victory.JPG');
   Defeat = loadImage('Assets/Defeat.JPG');
-  BorealeIntro = loadImage('Assets/BorealeIntro.jpg');
+  BorealeIntroduction = loadImage('Assets/BorealeIntroduction.jpg');
   Office = loadImage('Assets/Office.JPG');
   Blackletter = loadFont('Assets/Blackletter.TTF');
+  BlackletterOutline = loadFont('Assets/BlackletterOutline.TTF');
+  Ancient = loadFont('Assets/Ancient.TTF');
+  Bold = loadFont('Assets/theboldfont.TTF');
   imageMode(CENTER);
 
   //SPESS.play();
@@ -57,12 +63,37 @@ function draw() {
       break;
 
     case 0: //menu
-      image(BorealeIntro, 400, 400, 800, 800);
-      fill('white');
-      textFont(Blackletter, 22);
-      text("Commander Boreale, todeh the enemeh is at oua doar! Kill them in teh nehme of teh Emprah!", 400, 50);
-      fill(0, 0, 153);
-      text("Left Mouse Click to Start & Use Arrow Keys to Move", 400, 25);
+      image(BorealeIntroduction, 400, 400, 800, 800);
+      //fill('black');
+    //  textFont(BlackletterOutline, 22);
+    //  text("Commander Boreale, today the enemy is at our door! Kill them in the name of the Emperor!", 400, 125);
+      fill('yellow');
+      textFont(Bold, 16);
+      text("Commander Boreale, today the enemy is at our door! Kill them in the name of the Emperor!", 400, 100);
+    //  fill('black');
+    //  textFont(BlackletterOutline,22);
+    //  text("Left Mouse Click to Start", 130, 75);
+    fill('yellow');
+    textFont(  Bold, 35);
+    text("The Vindication of Indrick Boreale", 375, 50);
+
+      fill('yellow');
+      textFont(  Bold, 22);
+      text("Left Mouse Click to Start", 150, 700);
+    //  fill('black');
+    //  textFont(BlackletterOutline,22);
+    //  text("Use Arrow Keys to Move", 580, 75);
+      fill('yellow');
+      textFont(  Bold, 22);
+      text("Use Arrow Keys to Move", 650, 700);
+    //  fill('black');
+    //  textFont(BlackletterOutline,22);
+    //  text("You have 11 seconds to move and touch all the enemies before you are overwhelmed!", 400,100);
+      fill('yellow');
+      textFont(  Bold,18);
+      text("You have 11 seconds to move and touch all the enemies before you are overwhelmed!",400, 125); //400,725);
+      //fill('black');
+      //rect(1,700,8000,40);
       break;
 
     case 1: //game state
@@ -80,21 +111,40 @@ function draw() {
     case 2: //win state
       //background('yellow');
       image(Victory, 400, 400, 800, 800);
-      fill('white');
-      text("Teh Emprah Protects!", 600, 50);
-    fill(0, 0, 153);
-      text("Left Mouse Click to Start Over", 150, 50);
-      fill(0, 0, 153);
-        text("Scroll Up To See Message", 300, 650);
+        fill('yellow');
+          textFont(Bold,30);
+      text("The Emperor Protects!", 425, 50);
+    //  fill('black');
+    //  textFont(BlackletterOutline,22);
+  //  text("The Emperor Protects!", 600, 50);
+    fill('yellow');
+      textFont(Bold,30);
+  text("Left Mouse Click to Start Over", 400, 650);
+  //  fill('black');
+  //  textFont(BlackletterOutline,22);
+    //  text("Left Mouse Click to Start Over", 150, 50);
+
 
       break;
 
     case 3: //lose
       image(Defeat, 400, 400, 800, 800);
-      fill('red');
-      text("You have fehld teh Emprah...", 600, 100);
-      fill(0, 0, 153);
-      text("Left Mouse Click to Start Over", 150, 100);
+    fill(204, 0, 0);
+      textFont( Bold,50);
+    //  textStyle(BOLD);
+      text("You have failed the Emperor...", 400, 50);
+    //  fill('black');
+      //  textFont(BlackletterOutline,50);
+          //textStyle(BOLD);
+    //  text("You have failed the Emperor...", 400, 50);
+      fill(204, 0, 0);
+      textFont( Bold,50);
+    //  textStyle(BOLD);
+      text("Left Mouse Click to Start Over", 400, 100);
+  //  fill('black');
+    //  textFont(BlackletterOutline,50);
+    //  textStyle(BOLD);
+  //    text("Left Mouse Click to Start Over", 450, 100);
       break;
   }
 }
