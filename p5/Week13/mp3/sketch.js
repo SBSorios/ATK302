@@ -34,7 +34,7 @@ function setup() {
   Defeat = loadImage('Assets/Defeat.JPG');
   BorealeIntro = loadImage('Assets/BorealeIntro.jpg');
   Office = loadImage('Assets/Office.jpg');
-  Blackletter = loadFont('Assets/Blackletter.ttf');
+  Blackletter = loadFont('Assets/Blackletter.TTF');
   imageMode(CENTER);
 
   //SPESS.play();
