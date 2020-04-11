@@ -40,7 +40,7 @@ function setup() {
   //Blackletter = loadFont('Assets/Blackletter.TTF');
 //  BlackletterOutline = loadFont('Assets/BlackletterOutline.TTF');
   //Ancient = loadFont('Assets/Ancient.TTF');
-  Bold = loadFont('Assets/theboldfont.TTF');
+  Bold = loadFont('Assets/theboldfont.ttf');
   imageMode(CENTER);
 
   //SPESS.play();
