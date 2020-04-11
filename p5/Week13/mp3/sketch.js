@@ -33,7 +33,7 @@ function setup() {
   Victory = loadImage('Assets/Victory.JPG');
   Defeat = loadImage('Assets/Defeat.JPG');
   BorealeIntro = loadImage('Assets/BorealeIntro.jpg');
-  Office = loadImage('Assets/Office.jpg');
+  Office = loadImage('Assets/Office.JPG');
   Blackletter = loadFont('Assets/Blackletter.TTF');
   imageMode(CENTER);
 
