@@ -48,9 +48,9 @@ function preload() {
   gif_loadImg10 = loadImage("assets/FastSoul.gif");
   gif_createImg10 = createImg("assets/FastSoul.gif");
 
-  Dracula = loadSound('assets/Dracula.mp3');
-  EvilLaugh = loadSound('assets/EvilLaugh.mp3');
-  MonsterGrowl = loadSound('assets/MonsterGrowl.mp3');
+  Dracula = loadSound('assets/Dracula.MP3');
+  EvilLaugh = loadSound('assets/EvilLaugh.MP3');
+  MonsterGrowl = loadSound('assets/MonsterGrowl.MP3');
 
 }
 
@@ -58,7 +58,7 @@ let ele;
 
 function setup() {
   // put setup code here
-  ele = createAudio('assets/EvilLaugh.mp3');
+  ele = createAudio('assets/EvilLaugh.MP3');
   ele.autoplay(true);
 
   createCanvas(800, 800);
