@@ -18,39 +18,39 @@ var gif_loadImg6, gif_createImg6;
 
 function preload() {
 
-  gif_loadImg = loadImage("assets/VampireFlying.gif");
-  gif_createImg = createImg("assets/VampireFlying.gif");
+  gif_loadImg = loadImage("Assets/VampireFlying.gif");
+  gif_createImg = createImg("Assets/VampireFlying.gif");
 
-  gif_loadImg2 = loadImage("assets/MonsterFace.gif");
-  gif_createImg2 = createImg("assets/MonsterFace.gif")
+  gif_loadImg2 = loadImage("Assets/MonsterFace.gif");
+  gif_createImg2 = createImg("Assets/MonsterFace.gif")
 
-  gif_loadImg3 = loadImage("assets/LeftHand.gif");
-  gif_createImg3 = createImg("assets/LeftHand.gif");
+  gif_loadImg3 = loadImage("Assets/LeftHand.gif");
+  gif_createImg3 = createImg("Assets/LeftHand.gif");
 
-  gif_loadImg4 = loadImage("assets/RightHand.gif");
-  gif_createImg4 = createImg("assets/RightHand.gif");
+  gif_loadImg4 = loadImage("Assets/RightHand.gif");
+  gif_createImg4 = createImg("Assets/RightHand.gif");
 
-  gif_loadImg5 = loadImage("assets/Soul.gif");
-  gif_createImg5 = createImg("assets/Soul.gif");
+  gif_loadImg5 = loadImage("Assets/Soul.gif");
+  gif_createImg5 = createImg("Assets/Soul.gif");
 
-  gif_loadImg6 = loadImage("assets/Soul.gif");
-  gif_createImg6 = createImg("assets/Soul.gif");
+  gif_loadImg6 = loadImage("Assets/Soul.gif");
+  gif_createImg6 = createImg("Assets/Soul.gif");
 
-  gif_loadImg7 = loadImage("assets/Soul.gif");
-  gif_createImg7 = createImg("assets/Soul.gif");
+  gif_loadImg7 = loadImage("Assets/Soul.gif");
+  gif_createImg7 = createImg("Assets/Soul.gif");
 
-  gif_loadImg8 = loadImage("assets/FastSoul.gif");
-  gif_createImg8 = createImg("assets/FastSoul.gif");
+  gif_loadImg8 = loadImage("Assets/FastSoul.gif");
+  gif_createImg8 = createImg("Assets/FastSoul.gif");
 
-  gif_loadImg9 = loadImage("assets/FastSoul.gif");
-  gif_createImg9 = createImg("assets/FastSoul.gif");
+  gif_loadImg9 = loadImage("Assets/FastSoul.gif");
+  gif_createImg9 = createImg("Assets/FastSoul.gif");
 
-  gif_loadImg10 = loadImage("assets/FastSoul.gif");
-  gif_createImg10 = createImg("assets/FastSoul.gif");
+  gif_loadImg10 = loadImage("Assets/FastSoul.gif");
+  gif_createImg10 = createImg("Assets/FastSoul.gif");
 
-  Dracula = loadSound('assets/Dracula.mp3');
-  EvilLaugh = loadSound('assets/EvilLaugh.mp3');
-  MonsterGrowl = loadSound('assets/MonsterGrowl.mp3');
+  Dracula = loadSound('Assets/Dracula.mp3');
+  EvilLaugh = loadSound('Assets/EvilLaugh.mp3');
+  MonsterGrowl = loadSound('Assets/MonsterGrowl.mp3');
 
 }
 
@@ -58,17 +58,17 @@ let ele;
 
 function setup() {
   // put setup code here
-  ele = createAudio('assets/EvilLaugh.mp3');
+  ele = createAudio('Assets/EvilLaugh.mp3');
   ele.autoplay(true);
 
   createCanvas(800, 800);
   background('black');
-  Hound = loadImage('assets/Hound.png');
-  Lich = loadImage('assets/Lich.png');
-  Revenant = loadImage('assets/Revenant.png');
-  Crossbowman = loadImage('assets/Crossbowman.png');
-  MonsterFace = loadImage('assets/MonsterFace.png');
-  STRANGERCREATURE = loadFont('assets/STRANGERCREATURE.ttf');
+  Hound = loadImage('Assets/Hound.png');
+  Lich = loadImage('Assets/Lich.png');
+  Revenant = loadImage('Assets/Revenant.png');
+  Crossbowman = loadImage('Assets/Crossbowman.png');
+  MonsterFace = loadImage('Assets/MonsterFace.png');
+  STRANGERCREATURE = loadFont('Assets/STRANGERCREATURE.ttf');
 
   //gif width & height
   gif_createImg.position(-5000, -5000);
