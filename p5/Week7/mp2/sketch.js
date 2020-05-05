@@ -22,7 +22,7 @@ function preload() {
   gif_createImg = createImg("Assets/VampireFlying.gif");
 
   gif_loadImg2 = loadImage("Assets/MonsterFace.gif");
-  gif_createImg2 = createImg("Assets/MonsterFace.gif")
+  gif_createImg2 = createImg("Assets/MonsterFace.gif");
 
   gif_loadImg3 = loadImage("Assets/LeftHand.gif");
   gif_createImg3 = createImg("Assets/LeftHand.gif");
